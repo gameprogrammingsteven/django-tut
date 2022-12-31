@@ -1,10 +1,8 @@
 #extra Urls for app
 from django.urls import path 
-from . import views 
+from . import views
  
 urlpatterns = [
     path('projects/', views.projects, name="projects"),
-    path('project/<str:pk>/', views.project, name="project")
-    # path('home/', getHome),
-    # path('proj/', getProj),
+    path('project/<str:pk>/', views.project, name="project"),
 ]
